@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/My_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    android:foregroundTintMode="screen"
+    android:layerType="none"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/My_text9"
+        android:layout_width="264dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="17dp"
+        android:text="Email address"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toTopOf="@+id/enter_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/enter_email"
+        android:layout_width="383dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:inputType="textWebEmailAddress|textEmailAddress|textCapWords"
+        app:layout_constraintBottom_toTopOf="@+id/My_text10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/My_text9" />
+
+    <TextView
+        android:id="@+id/My_text10"
+        android:layout_width="265dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="17dp"
+        android:text="Create password"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toTopOf="@+id/edit_Password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_email" />
+
+    <EditText
+        android:id="@+id/edit_Password"
+        android:layout_width="374dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/My_text11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/My_text10" />
+
+    <TextView
+        android:id="@+id/My_text11"
+        android:layout_width="368dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="27dp"
+        android:text="Repeat password"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toTopOf="@+id/edit_Password2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Password" />
+
+    <EditText
+        android:id="@+id/edit_Password2"
+        android:layout_width="367dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:inputType="date|text|textPassword|numberDecimal|textEmailAddress|numberPassword|phone|textWebPassword"
+        app:layout_constraintBottom_toTopOf="@+id/My_Text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.23"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/My_text11" />
+
+    <TextView
+        android:id="@+id/My_Text"
+        android:layout_width="369dp"
+        android:layout_height="137dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="4dp"
+        android:text="Your password should have a minimum of 8 characters and contains at least one number,one uppercase and one lower case letter.you can use special characters"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Password2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="374dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="30dp"
+        android:text="NEXT"
+        android:onClick="launchMainActivity3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/My_Text"
+        tools:ignore="OnClick" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
